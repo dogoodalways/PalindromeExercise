@@ -6,7 +6,16 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         {
-            return false;
+            word = word.ToLower();
+
+            string reversed = "";
+
+            for (int i = word.Length - 1; i >= 0; i--)
+            
+                reversed += word[i];
+            
+
+            return word == reversed;
         }
     }
 }

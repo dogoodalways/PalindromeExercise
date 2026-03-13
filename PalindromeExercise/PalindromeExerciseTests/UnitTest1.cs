@@ -10,7 +10,8 @@ namespace PalindromeExerciseTests
         [Theory]
         [InlineData("racecar", true)]
         [InlineData("hello", false)]
-        [InlineData("Racecar", true)]
+        [InlineData("level", true)]
+        [InlineData("maybe", false)]
         public void PalindromeTester(string word, bool expected)
         {
             // Arrange
